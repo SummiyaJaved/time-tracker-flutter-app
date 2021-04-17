@@ -1,0 +1,22 @@
+Creating a Flutter Project:
+1. Start a new flutter project
+2. Name your project
+3. Set Flutter SDK Path if its not set
+4. Choose company name (Package Name)
+5. Finish
+6. Or you can create flutter project by running command flutter create projectname
+
+A tour of the project folders:
+There is a panel on the left side named project
+You can find all of your project files inside it
+There are four main folders by default
+1. android
+2. ios
+3. lib
+4. test
+ios and android folders are for native compilations
+lib folder contains all of your files which you are going to create
+There's also terminal available at the bottom
+run pwd to see where your project is saved
+run ls to see list of your files
+
