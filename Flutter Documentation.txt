@@ -20,3 +20,44 @@ There's also terminal available at the bottom
 run pwd to see where your project is saved
 run ls to see list of your files
 
+Introduction to Widget:
+Objects that describes a part of user interface are called widgets
+Top-level widgets
+Every widgets needs a method called build method
+build method describes a part of the user interface which is represented by the widget
+
+The Material App Widget:
+Material app is an app that uses material design which is a design system for building user interfaces
+Material app is a widget that takes a no of properties
+
+The Scaffold Widget:
+Implements the base material design usual layout structure
+
+The Flutter Widget Tree:
+Declarative UI are defined every times
+Example of Counter System:
+Widget Tree -> My App Widget -> build method -> MyHomePage Widget -> build method -> Scaffold ->
+AppBar, Center and FloatingActionButton.
+AppBar has children widget Text
+Center has Children Widget Column which in return has two children widgets Text and Tex
+FloatingActionButton has children widget Icon
+In Flutter, we always declare our UI by composing widgets together into a widget tree
+
+Stateless Widget:
+Widget that can have some configuration properties and these are passing when the widget is created in the build method
+However, these properties are all immutable which means they can't ever change
+As a result, the UI that is described by stateless widget is always going to be render in the same way
+
+Stateful Widget:
+Widget that can have some configuration properties when it is build but it in addition to that it can define some mutable state
+State is data which might vary during the life cycle of the widget and because of this state defines behaviour of widget
+It is possible for stateful widget to update its state and when this happens the widget itself rebuild
+As the result, the UI that widget describe might change
+Pattern to follow while creating stateful widget is
+Create a class that extends stateful widget
+Implement createState method that return an instance of the corresponding state class
+State class extend state of the original class itself
+Implement the build method
+Use setState method to rebuild widgets
+Stateful widgets defines mutable state
+
